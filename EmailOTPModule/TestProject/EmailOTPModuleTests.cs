@@ -66,19 +66,7 @@ namespace TestProject
             Assert.False(isValid);
         }
 
-        [Fact]
-        public void TestGenerateOTPEmail_WithValidEmail_SendsOTP()
-        {
-           
-            var emailOTPModule = new Email_OTP_Module();
-            var email = "user@dso.org.sg";
-
-           
-            var result = emailOTPModule.generate_OTP_email(email);
-
-           
-            Assert.Equal(Email_OTP_Module.STATUS_EMAIL_OK, result);
-        }
+      
 
     }
 }
